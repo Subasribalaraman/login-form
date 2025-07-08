@@ -1,0 +1,251 @@
+<html>
+<head>
+  <title>PraRoz - Web Design Course</title>  
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: url('https://i.ibb.co/9wK0xVR/tree-background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+
+    .main {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .logo {
+      color: orange;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .menu ul li {
+      margin: 0 15px;
+    }
+
+    .menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu ul li a:hover {
+      color: orange;
+    }
+
+    .search {
+      display: flex;
+    }
+
+    .srch {
+      padding: 5px 10px;
+      border: none;
+      outline: none;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .btn {
+      background: orange;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 0 3px 3px 0;
+      color: white;
+      cursor: pointer;
+    }
+
+    .content {
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      max-width: 600px;
+    }
+
+    .content h1 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .content h1 span {
+      color: orange;
+    }
+
+    .par {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .cn {
+      padding: 10px 20px;
+      background: orange;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .cn a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .form {
+      position: absolute;
+      right: 50px;
+      top: 20%;
+      background: black;
+      padding: 40px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .form h2 {
+      text-align: center;
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+    }
+
+    .btnn {
+      width: 100%;
+      padding: 10px;
+      background: orange;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    .btnn a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .link {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .link a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    .liw {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .icons {
+      text-align: center;
+    }
+
+    .icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .color{
+        color: darkorange;
+    }
+
+    .icons a:hover {
+      color: orange;
+    }
+        body{
+            background-image: url('./dark.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+             color: white;
+        }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">PraRoz <i class="fa-solid fa-earth-americas"></i></h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">DESIGN</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <input class="srch" type="search" placeholder="Type to Search">
+        <button class="btn">Search</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Web Design &<b class ="color">Development </b>Course</h1><br>
+      <p class="par">Web design is a specialization of the design stream. They also use HTML,<br>
+        CSS, WYSIWYG editing software, markup validators etc.,<br>
+        to create design elements.</p><br>
+
+      <button class="cn"><a href="#">JOIN US</a></button>
+    </div>
+
+    <div class="form">
+      <h2>Login Here</h2>
+      <input type="email" placeholder="Enter Email Here" />
+      <input type="password" placeholder="Enter Password Here" />
+      <button class="btnn"><a href="#">Login</a></button>
+
+      <p class="link">Don't have an account?<br>
+        <a href="#">Sign up here</a></p>
+      <p class="liw">Log in with</p>
+
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/subasri-b-420647290/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
